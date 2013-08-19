@@ -14,14 +14,6 @@ class LorenzAtractor(object):
         self._x=x
         self._y=y
         self._z=z
-    def F_dx(self,result):
-        return -self._p*result[0]+self._p*result[1]
-    
-    def F_dy(self,result):
-        return -result[0]*result[2]+self._r*result[0]-result[1]
-
-    def F_dz(self,result):
-        return result[0]*result[1]-self._b*result[2]
 
     def Func(self,result,t0):
         F_dx=lambda result: -self._p*result[0]+self._p*result[1]
