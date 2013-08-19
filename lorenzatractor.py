@@ -29,7 +29,7 @@ class LorenzAtractor(object):
     def show(self,x,y,z):
         fig=plt.figure()
         ax=fig.add_subplot(111,projection='3d')
-        ax.plot(x,y,z,'o',ms=4,mew=0.5)
+        ax.plot(x,y,z,'o')
         plt.show()
 #p=10.0
 #r=28.0
